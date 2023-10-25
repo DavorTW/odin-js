@@ -62,3 +62,64 @@ console.log(part5);
 //<<substr method>>>//
 let part7 = text1.substr(7,6);  //is similar to slice(), the difference is that the second parameter specifies the length of the extracted part
 console.log(`substr is: ${part7}`);
+
+
+//<<replace method>>//
+let text2 = "Please visit Microsoft!";
+//The replace() method replaces a specified value with another value in a string
+//The replace() method does not change the string it is called on.
+// The replace() method returns a new string.
+// The replace() method replaces only the first match
+// If you want to replace all matches, use a regular expression with the /g flag set.
+//By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work
+let newtext1 = text2.replace("Microsoft","W3Schools");
+console.log(newtext1);
+
+
+//<<replaceAll method>>//
+//the replaceAll method allow us to specify a regular expression instead of a string to be replaced
+//If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+
+let text3 = "I love cats. Cats are very easy to love. Cats are very popular.";
+text3 = text3.replaceAll("Cats","Dogs");
+text3 = text3.replaceAll("cats","dogs");
+console.log(text3);
+
+//<<toUpperCase method>>//
+let text4 = "Hello, world!";
+
+text4 = text4.toUpperCase();    //String is converted to uppercase
+console.log(text4);
+
+//<<toLowerCase method>>//
+
+text4 = text4.toLowerCase();
+console.log(text4);     //string is converted to lowercase
+
+//<<concat() method>>//
+
+let text5 = "hello";
+let text6 = "world";
+
+let text7 = text5.concat(" ",  text6);     //concat() methdo can be used  instead of the plus operator
+console.log(text7);
+
+/* NOTES ABOUT STRINGS
+*   All string methods return a new string. They don't modify the origal string
+*   Strings are immutable: Strings cannot be changed, only replaced.
+*/
+
+
+//<<trim() method>>//
+
+let myString3= "    Hello world!    ";
+console.log(myString3);
+
+myString3 = myString3.trim();      //removes whitespace from both sides of the string
+console.log(myString3);
+
+//<<trimStart() method>>//
+
+let myString4 = "    DAVOR    ";
+myString4 = myString4.trimStart();  //removes whitespace only from the start of a string
+console.log(myString4);
