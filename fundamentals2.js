@@ -123,3 +123,52 @@ console.log(myString3);
 let myString4 = "    DAVOR    ";
 myString4 = myString4.trimStart();  //removes whitespace only from the start of a string
 console.log(myString4);
+
+//<<trimEnd() method>>//
+
+myString4 = "     hola   ";
+myString4 = myString4.trimEnd();    //removes whitespace only from the end of a string
+console.log(myString4);
+
+
+//<<padStart() method>>//
+//It pads a string from the start with another string (multiple times) until it reaches a given length
+myString4 = "5";
+let padded = myString4.padStart(4, "0");    //pad a string with "0" until it reaches the length 4 (the length of the string including the string to be padded)
+console.log(padded);
+
+//<<padEnd() method>>//
+//It pads a string from the ennd with another string (multiple times) until it reaches a given length
+myString4 = "D";
+padded = myString4.padEnd(4,"r");   //pad a string with "r" until it reaches the length 4 (the length of the string including the string to be padded)
+console.log(padded);
+
+//<<charAt() method>>//
+myString4 = "HELLO WORLD";
+let char = myString4.charAt(1);     //returns the character at a specified index (position) in a string
+console.log(char);
+
+
+//<<charCodeAt() method>>//
+//The method returns a UTF-16 code(and integer between 0 and 65535)
+char = myString4.charCodeAt(0); //returns the unicode of the character at a specified index in a string
+console.log(char);  
+
+//<<property access>>//
+char =myString4[0];
+console.log(char);
+
+/*NOTE
+*It makes strings look like arrays (but they are not)
+*If no character is found, [] returns undefined, whiler charAt() returns an empty string
+*It is read only. str[0] = "A" gives no error but does not work
+*/
+
+//<<split() method>>//
+//tring is converted to an array with the split method
+myString4 = myString4.split("")    //split on single characters
+console.log(myString4);
+myString4 = "Hello world";
+myString4 = myString4.split(" ") //split on single characters
+console.log(myString4);
+
