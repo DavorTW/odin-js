@@ -165,7 +165,7 @@ console.log(char);
 */
 
 //<<split() method>>//
-//tring is converted to an array with the split method
+//string is converted to an array with the split method
 myString4 = myString4.split("")    //split on single characters
 console.log(myString4);
 myString4 = "Hello world";
